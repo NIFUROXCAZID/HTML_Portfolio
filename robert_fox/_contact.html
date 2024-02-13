@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Robert fox</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo logo">
+                    <img class="logo__image" src="img/Logo.svg" alt="Logo">
+                </div>
+                <nav class="header__nav-bar">
+                    <ul class="header__nav-list">
+                        <li><button class="header-menu header__btn--res"><img src="img/header_res_btn.svg" alt="="></button></li>
+                        <li><a id="homeLink" class="header__nav-item" href="index.html">Home</a></li>
+                        <li><a id="aboutLink" class="header__nav-item" href="_about.html">about</a></li>
+                        <li><a id="serviceLink" class="header__nav-item" href="_service.html">service</a></li>
+                        <li><a id="portfolioLink" class="header__nav-item" href="_portfolio.html">portfolio</a></li>
+                        <li><button class="header__btn header__btn--res header-menu" onclick="scrollToElement('contact-form')">contact</button></li>
+                    </ul>
+                </nav>
+                <button class="header__btn" onclick="scrollToElement('contact-form')">contact</button>
+                <button class="header-menu"><img src="img/header_res_btn.svg" alt="="></button>
+            </div>
+        </header>
+        <main class="main">
+            <section class="about about--contact">
+                <div class="about__content">
+                    <h1 class="about__title">CONTACT</h1>
+                    <a href="index.html" class="about__text">Home / <span>Single Portfolio</span></a>
+                </div>
+            </section>
+            <section class="footer footer--contact">
+                <div class="footer__container footer__container--contact">
+                    <div class="footer__infos">
+                        <h2 class="big-0x-title big-0x-title--black big-0x-title--margin-bottom big-0x-title--contact-origin">01 <span>contact</span></h2>
+                        <div class="footer__flex-contacts">
+                            <div class="footer__contacts-container contact-data">
+                                <img class="contact-data__image" src="img/phone.svg" alt="phone">
+                                <div class="contact-data__wrap">
+                                    <p class="contact-data__title contact-data__title--contact">Phone</p>
+                                    <a href="tel:+2195550114" class="contact-data__info">(219) 555-0114</a>
+                                </div>
+                            </div>
+                            <div class="footer__contacts-container contact-data">
+                                <img class="contact-data__image" src="img/mail.svg" alt="email">
+                                <div class="contact-data__wrap">
+                                    <p class="contact-data__title contact-data__title--contact">Email</p>
+                                    <a href="mailto:robertfox@example.com" class="contact-data__info">robertfox@example.com</a>
+                                </div>
+                            </div>
+                            <div class="footer__contacts-container contact-data">
+                                <img class="contact-data__image" src="img/adress.svg" alt="adress">
+                                <div class="contact-data__wrap">
+                                    <p class="contact-data__title contact-data__title--contact">Address</p>
+                                    <a href="http://maps.apple.com/?address=4517+Washington+Ave,+Manchester,+Kentucky,+39495" target="_blank" class="contact-data__info">4517 Washington Ave. Manchester, Kentucky 39495</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="robert__links robert__links--footer ">
+                            <div class="robert__link-wrap robert__link-wrap--contact">
+                                <div class="icon-contact-linkedin"></div>
+                            </div>
+                            <div class="robert__link-wrap robert__link-wrap--contact">
+                                <div class="icon-contact-ballin"></div>
+                            </div>
+                            <div class="robert__link-wrap robert__link-wrap--contact">
+                                <div class="icon-contact-instagram"></div>
+                            </div>
+                            <div class="robert__link-wrap robert__link-wrap--contact">
+                                <div class="icon-contact-facebook"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__form" id="contact-form">
+                        <h2 class="big-0x-title big-0x-title--black big-0x-title--margin-bottom big-0x-title--contact-responsive">01 <span>contact</span></h2>
+                        <p class="footer__allow-text footer__allow-text--contact">I’m always open to discussing <span>product design work</span> or partnership</p>
+                        <form id="contact" enctype="multipart/form-data" method="POST" class="contact">
+                            <div class="contact__areas">
+                                <div class="contact__flex">
+                                    <div class="contact__field-wrap">
+                                        <label class="contact__label contact__label--contact" for="name">Your name*</label>
+                                        <input class="contact__field contact__field--contact" minlength="2" maxlength="70" tabindex="1" name="name" placeholder="Enter your name here" required type="text">
+                                    </div>
+                                    <div class="contact__field-wrap">
+                                        <label class="contact__label contact__label--contact" for="email">Email Address*</label>
+                                        <input class="contact__field contact__field--contact" minlength="5" maxlength="70" tabindex="2" name="email" placeholder="Enter your email address" required type="email">
+                                    </div>
+                                    <div class="contact__field-wrap contact__field-wrap--textarea">
+                                        <label class="contact__label contact__label--contact" for="your-message">Message</label>
+                                        <textarea class="contact__field contact__field--contact contact__field--area" name="your-message" placeholder="Write your message here"></textarea>
+                                    </div>
+                                </div>
+                                <button class="common-button" type="submit">SEND MESSAFE</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="location">
+                <h2 class="big-0x-title big-0x-title--black">02 <span>location</span></h2>
+                <div class="location__wrap">
+                    <a class="location__ref" target="_blank" href="https://www.google.com.ua/maps/search/4517+Washington+Ave.+Manchester,+Kentucky+39495/@37.1536409,-83.7641947,17z/data=!3m1!4b1?hl=ru&entry=ttu"></a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__copyright">
+                <p>Copyright <a href="#">Banana Studio</a> 2022 All Right Reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

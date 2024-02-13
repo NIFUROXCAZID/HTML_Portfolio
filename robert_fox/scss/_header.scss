@@ -1,0 +1,102 @@
+.header {
+    @extend %header;
+    // .header__container
+    &__container {
+        @extend %common-container;
+        padding-top: toRem(24);
+        padding-bottom: toRem(24);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    // .header__logo
+    &__logo {
+    }
+    // .header__nav-bar
+    &__nav-bar {
+        @media (max-width: toEm($huge-mobile-adaptive)) {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 88px;
+            overflow: auto;
+            left: -100%;
+            background-color: $Black;
+            transition: left 0.3s;
+            .menu-open & {
+                left: 0;
+                
+            }
+        }
+    }
+    // .header__nav-list
+    &__nav-list {
+        display: flex;
+        gap: toRem(54);
+        @media (max-width: toEm($huge-mobile-adaptive)) {
+            flex-direction: column;
+            align-items: center;
+            margin-top: toRem(50);
+            gap: toRem(34);
+        }
+    }
+    // .header__nav-item
+    &__nav-item {
+        color: $Grey-text;
+        font-family: Montserrat;
+        font-size: toRem(12);
+        font-weight: 600;
+        line-height: toRem(15);
+        letter-spacing: 0%;
+        text-transform: uppercase;
+
+        transition: 0.3s;
+        &:hover {
+            color: $Main-Color;
+        }
+    }
+    .header__nav-item.active {
+        color: $Main-Color;
+    }
+    // .header__btn
+    &__btn {
+        color: $Main-Color;
+        font-family: Montserrat;
+        font-size: toRem(12);
+        font-weight: 600;
+        line-height: toRem(15);
+        letter-spacing: 0%;
+        text-transform: uppercase;
+
+        padding: toRem(12) toRem(16);
+        border: 1px solid $Main-Color;
+        display: inline-block;
+        border-radius: 4px;
+
+        @media (max-width: toEm($huge-mobile-adaptive)) {
+            display: none;
+        }
+        &--res {
+            display: none;
+        @media (max-width: toEm($huge-mobile-adaptive)) {
+            display: inline-block;
+        }
+        }
+
+        transition: 0.3s;
+        &:hover {
+            background-color: $Grey-10;
+        }
+    }
+}
+.header-menu {
+    display: none;
+    @media (max-width: toEm($huge-mobile-adaptive)) {
+        display: block;
+    }
+}
+.logo {
+    // .logo__image
+    &__image {
+    }
+}

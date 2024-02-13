@@ -1,0 +1,157 @@
+.big-0x-title {
+    color: $Main-Color;
+    font-family: Anton;
+    @include adaptiveValue("font-size", 80, 64);
+    font-weight: 400;
+    line-height: toRem(120);
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    &--margin-bottom {
+        @include adaptiveValue("margin-bottom", 55, 17);
+    }
+    & span {
+        color: $White-text;
+        @include adaptiveValue("font-size", 40, 32);
+        line-height: toRem(60);
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &--black {
+        & span {
+            color: $Black;
+        }
+    }
+    &--portfolio-1 {
+        display: block;
+        @media (max-width: toEm(950)) {
+            display: none;
+        }
+    }
+    &--portfolio-2 {
+        display: none;
+        @media (max-width: toEm(950)) {
+            display: block;
+        }
+    }
+    &--partner-service {
+        background: $Grey-10;
+        padding-top: toRem(60);
+        padding-bottom: toRem(40);
+    }
+    &--questions {
+        @media (max-width: toEm(376)) {
+            font-size: toRem(44);
+            line-height: toRem(60);
+            & span {
+                font-size: toRem(24);
+                line-height: toRem(40);
+            }
+        }
+    }
+    &--contact-origin {
+        display: block;
+        @media (max-width: toEm($huge-mobile-adaptive)) {
+            display: none;
+        }
+    }
+    &--contact-responsive {
+        display: none;
+        @media (max-width: toEm($huge-mobile-adaptive)) {
+            display: block;
+        }
+    }
+}
+
+.default-text {
+    color: $Grey-text;
+    font-family: Montserrat;
+    @include adaptiveValue("font-size", 14, 12);
+    font-weight: 500;
+    line-height: toRem(32);
+    letter-spacing: -2%;
+    &--margin-top {
+        margin-top: toRem(15);
+    }
+    &--my-service {
+        line-height: toRem(24);
+    }
+    &--testimonial {
+        color: $Black;
+        margin-bottom: toRem(32);
+        max-width: toRem(435);
+    }
+    &--my-skills {
+        @include adaptiveValue("margin-top", 12, 24);
+        @include adaptiveValue("margin-bottom", 32, 24);
+    }
+    &--questions {
+        padding-right: toRem(25);
+        margin-top: toRem(8);
+    }
+}
+.common-button {
+    color: $White-text;
+    font-family: Montserrat;
+    font-size: toRem(12);
+    font-weight: 600;
+    line-height: toRem(15);
+    letter-spacing: 0%;
+    padding: toRem(16) toRem(24);
+    border-radius: 4px;
+    background-color: $Main-Color;
+    transition: 0.3s;
+    &:hover {
+        background-color: $Main-Color-hover;
+    }
+}
+
+.statistic {
+    display: flex;
+    align-items: center;
+    column-gap: toRem(8);
+    // .statistic--left
+    &--right {
+        justify-content: flex-end;
+        text-align: right;
+    }
+    // .statistic--left
+    &--left {
+        justify-self: flex-start;
+    }
+    // .statistic__text
+    &__text {
+        color: $Black;
+        font-family: Montserrat;
+        font-size: toRem(14);
+        font-weight: 700;
+        line-height: toRem(20);
+        letter-spacing: -4%;
+    }
+    // .statistic__number
+    &__number {
+        color: $Main-Color;
+        font-family: Anton;
+        font-size: toRem(64);
+        font-weight: 400;
+        line-height: toRem(96);
+        letter-spacing: 2%;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    &--margin-top {
+        margin-top: toRem(31);
+    }
+    &--margin-bottom {
+        margin-bottom: toRem(21);
+    }
+}
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: $Grey-20;
+    // .line--margin-1
+    &--margin-1 {
+        @include adaptiveValue("margin-top", 31, 23);
+        @include adaptiveValue("margin-bottom", 33, 24);
+    }
+}
