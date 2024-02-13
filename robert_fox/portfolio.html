@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Robert fox</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo logo">
+                    <img class="logo__image" src="img/Logo.svg" alt="Logo">
+                </div>
+                <nav class="header__nav-bar">
+                    <ul class="header__nav-list">
+                        <li><button class="header-menu header__btn--res"><img src="img/header_res_btn.svg" alt="="></button></li>
+                        <li><a id="homeLink" class="header__nav-item" href="index.html">Home</a></li>
+                        <li><a id="aboutLink" class="header__nav-item" href="about.html">about</a></li>
+                        <li><a id="serviceLink" class="header__nav-item" href="service.html">service</a></li>
+                        <li><a id="portfolioLink" class="header__nav-item" href="portfolio.html">portfolio</a></li>
+                        <li><a class="header__btn header__btn--res" href="contact.html">contact</a></li>
+                    </ul>
+                </nav>
+                <a class="header__btn" href="contact.html">contact</a>
+                <button class="header-menu"><img src="img/header_res_btn.svg" alt="="></button>
+            </div>
+        </header>
+        <main class="main">
+            <section class="about about--portfolio">
+                <div class="about__content">
+                    <h1 class="about__title">PORTFOLIO</h1>
+                    <a href="index.html" class="about__text">Home / <span>Portfolio</span></a>
+                </div>
+            </section>
+            <section class="portfolio portfolio--portfolio">
+                <div class="portfolio__wrapper">
+                    <div class="portfolio__info">
+                        <h2 class="big-0x-title big-0x-title--black">01 <span>portfolio</span></h2>
+                        <div class="portfolio__nav">
+                            <ul class="portfolio__nav-list">
+                                <li>
+                                    <p id="all" class="portfolio__nav-item portfolio__active" href="#">ALL</З>
+                                </li>
+                                <li>
+                                    <p id="uiux" class="portfolio__nav-item" href="#">UI/UX DESIGN</З>
+                                </li>
+                                <li>
+                                    <p id="pd" class="portfolio__nav-item" href="#">PRODUCT DESIGN</З>
+                                </li>
+                                <li>
+                                    <p id="branding" class="portfolio__nav-item" href="#">BRANDING</З>
+                                </li>
+                                <li>
+                                    <p id="webdesign" class="portfolio__nav-item" href="#">WEB DESIGN</З>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portfolio__buttons">
+                            <!-- If we need navigation buttons -->
+                            <div class="portfolio__button-prev"><img src="./img/arrow-left-portfolio.svg" alt=""></div>
+                            <div class="portfolio__button-next"><img src="./img/arrow-right-portfolio.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <!-- Slider main container -->
+                    <div class="portfolio__swiper swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="portfolio__swiper-wrapper swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="portfolio__swiper-slide swiper-slide">
+                                <div class="portfolio__relative">
+                                    <div class="portfolio__img-wrap">
+                                        <img src="img/Portfolio-image-1.jpeg" alt="portfolio">
+                                    </div>
+                                    <div class="portfolio__labels">
+                                        <p class="portfolio__slide-title">MOBILE DESIGN</p>
+                                        <p class="portfolio__category">UI/UX Design</p>
+                                    </div>
+                                    <div class="portfolio__opacity"></div>
+                                </div>
+                            </div>
+                            <div class="portfolio__swiper-slide swiper-slide">
+                                <div class="portfolio__relative">
+                                    <div class="portfolio__img-wrap">
+                                        <img src="img/Portfolio-image-3.jpeg" alt="portfolio">
+                                    </div>
+                                    <div class="portfolio__labels">
+                                        <p class="portfolio__slide-title">PRODUCT DESIGN</p>
+                                        <p class="portfolio__category">UI/UX Design</p>
+                                    </div>
+                                    <div class="portfolio__opacity"></div>
+                                </div>
+                            </div>
+                            <div class="portfolio__swiper-slide swiper-slide">
+                                <div class="portfolio__relative">
+                                    <div class="portfolio__img-wrap">
+                                        <img src="img/Portfolio-image-1.jpeg" alt="portfolio">
+                                    </div>
+                                    <div class="portfolio__labels">
+                                        <p class="portfolio__slide-title">BRANDING</p>
+                                        <p class="portfolio__category">CEO MARKETING</p>
+                                    </div>
+                                    <div class="portfolio__opacity"></div>
+                                </div>
+                            </div>
+                            <div class="portfolio__swiper-slide swiper-slide">
+                                <div class="portfolio__relative">
+                                    <div class="portfolio__img-wrap">
+                                        <img src="img/Portfolio-image-3.jpeg" alt="portfolio">
+                                    </div>
+                                    <div class="portfolio__labels">
+                                        <p class="portfolio__slide-title">WEB DESIGN</p>
+                                        <p class="portfolio__category">UI/UX Design</p>
+                                    </div>
+                                    <div class="portfolio__opacity"></div>
+                                </div>
+                            </div>
+                            <div class="portfolio__swiper-slide swiper-slide">
+                                <div class="portfolio__relative">
+                                    <div class="portfolio__img-wrap">
+                                        <img src="img/Portfolio-image-1.jpeg" alt="portfolio">
+                                    </div>
+                                    <div class="portfolio__labels">
+                                        <p class="portfolio__slide-title">MOBILE DESIGN AMOGUS</p>
+                                        <p class="portfolio__category">UI/UX Design</p>
+                                    </div>
+                                    <div class="portfolio__opacity"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="portfolio__swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <div class="partners partners--about partners--service partners--portfolio">
+                <h2 class="big-0x-title big-0x-title--black big-0x-title--partner-service">02 <span>my partners</span></h2>
+                <div class="partners__bacgroud partners__bacgroud--about">
+                    <div class="partners__img-container partners__img-container--about partners__img-container--service">
+                        <img class="partners__image" src="img/behance.svg" alt="service">
+                        <img class="partners__image" src="img/slack.svg" alt="service">
+                        <img class="partners__image" src="img/dribbble.svg" alt="service">
+                        <img class="partners__image" src="img/twilio.svg" alt="service">
+                        <img class="partners__image" src="img/github.svg" alt="service">
+                        <!--  -->
+                        <img class="partners__image" src="img/Chargebee-partner.svg" alt="service">
+                        <img class="partners__image" src="img/Udemy-partner.svg" alt="service">
+                        <img class="partners__image" src="img/insta-partner.svg" alt="service">
+                        <img class="partners__image" src="img/mapabox-partner.svg" alt="service">
+                    </div>
+                </div>
+                <div class="partners__wrapper">
+                    <div class="partners__hire-container">
+                        <p class="partners__text">let’s work together on Your Next Project</p>
+                        <a href="contact.html" class="common-button">HIRE ME NOW</a>
+                        <a href="#" download class="partners__ref">
+                            <div class="partners__download-img"><img src="img/download.svg" alt="dw"></div>
+                            <p class="partners__download-cv">Download CV</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <section class="questions">
+                <div class="questions__sub-container">
+                    <h2 class="big-0x-title big-0x-title--black big-0x-title--questions">04 <span>HAVE ANY QUESTIONS?</span></h2>
+                    <div class="line line--margin-1"></div>
+                    <div class="questions__wrap">
+                        <div class="questions__item" id="question">
+                            <button data-spoller class="questions__button">
+                                <p class="questions__title">Where Can I Find More Information?</p>
+                                <img class="questions__img" src="img/arrow-drop.svg" alt="+">
+                            </button>
+                            <div class="questions__body">
+                                <ul class="questions__list">
+                                    <li class="questions__item-li">
+                                        <p class="default-text default-text--questions">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="questions__item" id="question">
+                            <button data-spoller class="questions__button">
+                                <p class="questions__title">What Kinds of Payment Do You Accept?</p>
+                                <img class="questions__img" src="img/arrow-drop.svg" alt="+">
+                            </button>
+                            <div class="questions__body">
+                                <ul class="questions__list">
+                                    <li class="questions__item-li">
+                                        <p class="default-text default-text--questions">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="questions__item" id="question">
+                            <button data-spoller class="questions__button">
+                                <p class="questions__title">What Are Your Terms and Conditions?</p>
+                                <img class="questions__img" src="img/arrow-drop.svg" alt="+">
+                            </button>
+                            <div class="questions__body">
+                                <ul class="questions__list">
+                                    <li class="questions__item-li">
+                                        <p class="default-text default-text--questions">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__copyright">
+                <p>Copyright <a href="#">Banana Studio</a> 2022 All Right Reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
