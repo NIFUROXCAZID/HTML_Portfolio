@@ -1,0 +1,16 @@
+{
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "[yaml]": {
+        "editor.tabSize": 4
+    },
+    "[dockercompose]": {
+        "editor.tabSize": 4
+    },
+    "editor.tabSize": 4,
+    "prettier.printWidth": 300,
+    "editor.wordWrapColumn": 80
+}
