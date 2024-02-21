@@ -1,0 +1,105 @@
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1440;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1170;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Змінні основних медіа брейкпоінтів
+// Показуємо контент беспечно для усіх ПК моніторів
+$pc-adaptive: 1250;
+// Показуємо контент беспечно для усіх планшетів
+$tablet-adaptive: 991.98;
+// Показуємо контент беспечно для усіх великих мобільних
+$huge-mobile-adaptive: 767.98;
+// Стилі для маленьких мобільних
+$small-mobile-adaptive: 479.98;
+
+// Змінні для кольорів
+$Main-Color: #FE390C;
+$Main-Color-hover: #9c290f;
+$Black: #111214;
+$Black-2: rgb(28, 30, 33);
+$Black-opacity: rgba(1, 9, 20, 0.3);
+$Grey-100: #A7AAB4;
+$Grey-10: #F7F7F7;
+$Grey-20: rgb(223, 226, 229);
+$Grey-text: #A9A9AA;
+$White-text: rgb(255, 255, 255);
+$Field_text: rgba(202, 205, 209, 0.1);
+$Input_text: rgba(169, 169, 170, 0.6);
+
+// Шаблон для хедера
+%header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+// // Шаблон для футера
+// %footer {
+//     @extend %header;
+//     position: relative;
+//     bottom: 0;
+// }
+
+// міксін для стилів по замовчанню на сторінці
+@mixin default-styles {
+    body {
+        font-family: 'Anton', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #101010;
+        line-height: 1.46;
+    }
+    .wrapper {
+        min-height: 100vh;
+        overflow: clip;
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper > main {
+        flex-grow: 1;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+// Шаблон для популярного контейнера
+%common-container {
+    max-width: toRem(1170);
+    padding-left: toRem(15);
+    padding-right: toRem(15);
+    margin: 0 auto;
+}
+
+// Міксин для адаптивного зображення
+@mixin adaptive-image-settings($width: 100%, $height: 100%, $object-fit: cover, $aspect-ratio: toRem(270) / toRem(270)) {
+    width: $width;
+    height: $height;
+    object-fit: $object-fit;
+    aspect-ratio: $aspect-ratio;
+}
+
+// Міксин для назви з декором попереду
+@mixin common-before-title($flex-basis: 11px, $width: 11px, $height: 11px, $bgColor: null, $borderRadius: 0px) {
+    content: '';
+    flex-basis: $flex-basis;
+    width: $width;
+    height: $height;
+    @if $bgColor != null {
+        background-color: $bgColor;
+    } @else {
+        background-color: $Main-Color; // Значення за замовчанням
+    }
+    border-radius: $borderRadius;
+}
