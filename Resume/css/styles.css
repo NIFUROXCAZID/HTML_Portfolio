@@ -103,6 +103,8 @@ body {
     line-height: 24px;
     text-decoration-line: underline;
     transition: 0.1s;
+
+    word-break: break-all;
 }
 .project-item-link:hover {
     color: #ff4800;
