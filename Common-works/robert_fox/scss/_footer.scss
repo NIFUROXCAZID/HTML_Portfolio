@@ -1,0 +1,190 @@
+.footer {
+    background: url(../img/footer-bg.jpeg) center center / cover no-repeat; // Найкращий запис для бекграунда
+    &--contact {
+        background: none;
+    }
+    // .footer__container
+    &__container {
+        @extend %common-container;
+        margin-top: toRem(55);
+        @include adaptiveValue("padding-bottom", 51, 35);
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: toRem(15);
+        @media (max-width: toEm($huge-mobile-adaptive)) {
+            flex-wrap: wrap;
+            &--contact {
+                flex-direction: column-reverse;
+                gap: toRem(60);
+            }
+        }
+    }
+
+    // .footer__infos
+    &__infos {
+        flex: 1 1 auto;
+    }
+    // .footer__flex-contacts
+    &__flex-contacts {
+        @include adaptiveValue("margin-bottom", 64, 47);
+    }
+    // .footer__contacts-container
+    &__contacts-container {
+        &:not(:last-child) {
+            margin-bottom: toRem(42);
+        }
+    }
+    // .footer__form
+    &__form {
+        flex: 1 1 auto;
+    }
+    // .footer__allow-text
+    &__allow-text {
+        color: $White-text;
+        font-family: Anton;
+        @include adaptiveValue("font-size", 24, 20);
+        font-weight: 400;
+        line-height: toRem(36);
+        letter-spacing: 0%;
+        display: inline-block;
+        & span {
+            // Через display: flex; нема пробілів бля span, їх треба писати всередині span
+            color: $Main-Color;
+            // white-space: pre;
+        }
+        // display: flex;
+        // flex-wrap: wrap;
+        margin-bottom: toRem(41);
+        &::after {
+            content: "";
+            // flex-basis: toRem(655);
+            height: toRem(2);
+            width: 100%;
+            background-color: $Black-2;
+            margin-top: toRem(23);
+        }
+        &--contact {
+            color: $Black;
+            &::after {
+                background-color: $Grey-20;
+            }
+        }
+    }
+    // .footer__copyright
+    &__copyright {
+        padding-top: toRem(30);
+        padding-bottom: toRem(30);
+        & p {
+            color: $Grey-text;
+            font-family: Montserrat;
+            @include adaptiveValue("font-size", 14, 12);
+            font-weight: 600;
+            line-height: toRem(20);
+            letter-spacing: -4%;
+            text-align: center;
+            & a {
+                color: $White-text;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.contact-data {
+    display: flex;
+    align-items: center;
+    gap: toRem(14);
+    // .contact-data__image
+    &__image {
+    }
+    // .contact-data__wrap
+    &__wrap {
+    }
+    // .contact-data__title
+    &__title {
+        color: $White-text;
+        font-family: Montserrat;
+        font-size: toRem(16);
+        font-weight: 500;
+        line-height: toRem(20);
+        letter-spacing: -2%;
+        &--contact {
+            color: $Black;
+        }
+    }
+    // .contact-data__info
+    &__info {
+        color: $Grey-text;
+        font-family: Montserrat;
+        font-size: toRem(14);
+        font-weight: 500;
+        line-height: toRem(17);
+        letter-spacing: -2%;
+        display: block;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.contact {
+    // .contact__areas
+    &__areas {
+    }
+    // .contact__flex
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: toRem(30);
+        @include adaptiveValue("margin-bottom", 48, 32);
+    }
+    // .contact__field-wrap
+    &__field-wrap {
+        flex: 1 1 calc(50% - toRem(15));
+        @media (max-width: toEm(767.98)) {
+            flex: 1 1 100%;
+        }
+        // .contact__field-wrap--textarea
+        &--textarea {
+            flex: 1 1 100%;
+        }
+    }
+    // .contact__label
+    &__label {
+        color: $White-text;
+        font-family: Montserrat;
+        font-size: toRem(14);
+        font-weight: 500;
+        line-height: toRem(17);
+        letter-spacing: -2%;
+        display: block;
+        margin-bottom: toRem(12);
+        &--contact {
+            color: $Black;
+        }
+    }
+    // .contact__field
+    &__field {
+        color: $Input_text;
+        font-family: Montserrat;
+        font-size: toRem(12);
+        font-weight: 500;
+        line-height: toRem(15);
+        letter-spacing: -2%;
+
+        border-radius: 2px;
+        background: $Field_text;
+        padding: toRem(20) toRem(16);
+        width: 100%;
+        min-height: toRem(54);
+        // .contact__field--area
+        &--area {
+            min-height: toRem(124);
+            resize: none;
+        }
+        &--contact {
+            color: $Black;
+        }
+    }
+}
