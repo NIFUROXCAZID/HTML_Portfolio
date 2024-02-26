@@ -1,0 +1,19 @@
+.read-more {
+	display: inline-flex;
+	gap: 13px;
+	align-items: center;
+
+	color: var(--accent);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.85; /* 25.9px */
+
+	&::after {
+		content: url('./../img/icons//arrow-right.svg');
+		height: 24px;
+	}
+
+    &--large {
+        font-size: 18px;
+    }
+}

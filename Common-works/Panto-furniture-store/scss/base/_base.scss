@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@400;600&display=swap');
+
+html,
+body {
+	font-family: var(--font-main);
+	color: var(--text-color);
+}
+
+.container {
+	max-width: 1310px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+	&--small {
+        max-width: 1094px;
+	}
+}
+
+.none {
+	display: none !important;
+}
+
+.title-2 {
+	font-weight: 700;
+    font-size: clamp(32px, 1.702rem + 1.49vw, 42px);
+}
