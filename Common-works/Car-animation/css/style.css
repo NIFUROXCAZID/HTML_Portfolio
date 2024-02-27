@@ -1,0 +1,1062 @@
+/* Підключення шрифтів */
+@import url('fonts.css');
+
+/* Скидання стилів */
+@import url('reset.css');
+
+/* Основні стилі */
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    color: #101010;
+    line-height: 1.46; /* 26.314px */
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+.header {
+}
+.header--fix {
+    position: sticky; /* Ще можна fixed */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.main {
+    background-color: rgb(202, 202, 202);
+}
+.car-container {
+    max-width: 1280px;
+}
+.car-container--margin {
+    margin: 0 auto;
+    padding-top: 70px;
+}
+.history {
+}
+.history--margin {
+    margin-bottom: 50px;
+}
+.excample-car {
+    max-width: 400px;
+}
+.excample-car--margin {
+    margin-bottom: 50px;
+}
+.title-car {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+}
+.title-car--margin {
+    margin-bottom: 20px;
+}
+.reference-car {
+    max-width: 1280px;
+}
+.reference-car--margin {
+    margin-bottom: 20px;
+}
+/* ==============ПІШЛА МАШИНКА=(деталі, анімація потім нижче)================================================================================================ */
+/* Памьятай властивості border-radius, border, rotate, scew, gradient, position absolute, z-index */
+/*================== ФОН */
+.car-field {
+    margin-bottom: 800px;
+    overflow: hidden;
+}
+.car-background {
+    width: 1280px;
+    height: 720px;
+    background: url(../img/paralax-1.png) 0% 50% repeat-x;
+    /* background-size: cover; */
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+}
+.car-background-2 {
+    width: 1280px;
+    height: 720px;
+    background: url(../img/paralax-3.png) 0% 50% repeat-x;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+    opacity: 0;
+}
+.car-field * {
+    position: absolute;
+    z-index: 100;
+}
+.car-prop {
+    width: 1280px;
+    height: 720px;
+}
+/* z-index 100 по замовчанню, де треба робити менше */
+/* Дорога */
+.car__road {
+    width: 1280px;
+    height: 200px;
+    background-color: rgb(49, 65, 27);
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+.car__road-2 {
+    width: 1280px;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgb(84, 83, 81);
+    opacity: 0;
+}
+.car__row-road {
+    width: 1280px;
+    height: 120px;
+    background-color: rgb(81, 65, 12);
+    bottom: 50px;
+    left: 0;
+    z-index: 10;
+}
+.car__row-road-2 {
+    width: 1280px;
+    height: 120px;
+    bottom: 50px;
+    left: 0;
+    z-index: 10;
+    background-color: rgb(192, 201, 202);
+    opacity: 0;
+}
+.shadow {
+    width: 950px;
+    height: 100px;
+    border-radius: 30%;
+    background-color: rgba(26, 18, 4, 0.5);
+    bottom: 60px;
+    left: 130px;
+    z-index: 11;
+}
+
+/* Машина */
+.car__wheel-back--1 {
+    width: 150px;
+    height: 75px;
+    /* background-color: #2b2929; */
+    background: linear-gradient(56deg, rgba(60, 46, 12, 1) 0%, rgba(33, 32, 32, 1) 100%);
+    border-top-left-radius: 75px 75px;
+    border-top-right-radius: 75px 75px;
+    bottom: 140px;
+    left: 25%;
+    z-index: 100;
+}
+.car__wheel-back--2 {
+    width: 150px;
+    height: 75px;
+    /* background-color: #2b2929; */
+    background: linear-gradient(56deg, rgba(33, 32, 32, 1) 0%, rgba(60, 46, 12, 1) 100%);
+    border-top-left-radius: 75px 75px;
+    border-top-right-radius: 75px 75px;
+    bottom: 140px;
+    left: 65%;
+    z-index: 100;
+}
+.car__part--wheel {
+    width: 130px;
+    height: 130px;
+    /* background-color: rgb(23, 22, 22); */
+    background: linear-gradient(56deg, rgba(64, 62, 60, 1) 53%, rgba(0, 0, 0, 1) 100%);
+    border-radius: 50%;
+    bottom: 70px;
+    left: 65.8%;
+    z-index: 100;
+}
+.wheel-2 {
+    background: linear-gradient(56deg, rgba(0, 0, 0, 1) 0%, rgba(64, 62, 60, 1) 52%);
+    bottom: 70px;
+    left: 25.8%;
+    z-index: 100;
+}
+.car__part--disk {
+    width: 85px;
+    height: 85px;
+    background: linear-gradient(56deg, rgba(166, 166, 166, 1) 0%, rgba(105, 94, 83, 1) 49%);
+    /* background-color: rgb(157, 149, 142); */
+    border-radius: 50%;
+    bottom: 23px;
+    left: 17%;
+}
+.car__part--bolt-holder {
+    width: 45px;
+    height: 45px;
+    /* background-color: rgb(105, 105, 105); */
+    background: linear-gradient(56deg, rgba(142, 135, 135, 1) 84%, rgba(54, 50, 50, 1) 100%);
+    border-radius: 50%;
+    bottom: 19px;
+    left: 23%;
+}
+.car__part--bolt {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(21, 21, 21);
+    bottom: 27px;
+    left: 23%;
+}
+.car__part--bolt:nth-child(2) {
+    bottom: 27px;
+    left: 28px;
+}
+.car__part--bolt:nth-child(3) {
+    bottom: 14px;
+    left: 28px;
+}
+.car__part--bolt:nth-child(4) {
+    bottom: 14px;
+    left: 23%;
+}
+.porog-1 {
+    width: 150px;
+    height: 20px;
+    background-color: rgb(146, 134, 134);
+    bottom: 140px;
+    left: 13%;
+}
+.porog-2 {
+    width: 170px;
+    height: 100px;
+    background-color: rgb(146, 134, 134);
+    /* background: linear-gradient(180deg, rgba(184,184,184,1) 0%, rgba(73,73,73,1) 100%); */
+    border-radius: 90px 90px 0 0; /* встановлюємо радіуси (перші два значення - радіуси верхніх кутів, останні два - нижніх) */
+    overflow: hidden; /* обрізаємо зайву частину півкола */
+    bottom: 140px;
+    left: 24.3%;
+    z-index: 99;
+}
+.porog-3 {
+    width: 360px;
+    height: 25px;
+    background-color: rgb(146, 134, 134);
+    bottom: 140px;
+    left: 37%;
+}
+.porog-4 {
+    width: 170px;
+    height: 100px;
+    background-color: rgb(146, 134, 134);
+    border-radius: 90px 90px 0 0; /* встановлюємо радіуси (перші два значення - радіуси верхніх кутів, останні два - нижніх) */
+    overflow: hidden; /* обрізаємо зайву частину півкола */
+    bottom: 140px;
+    left: 64.3%;
+    z-index: 99;
+}
+.porog-5 {
+    width: 80px;
+    height: 25px;
+    background-color: rgb(146, 134, 134);
+    bottom: 140px;
+    left: 77%;
+}
+.front-1 {
+    width: 300px;
+    height: 110px;
+    /* background-color: rgb(153, 145, 34); */
+    background: linear-gradient(357deg, rgba(182, 152, 43, 1) 0%, rgba(33, 64, 2, 1) 100%);
+    bottom: 140px;
+    left: 61%;
+    z-index: 98;
+    transform: skew(-20deg);
+}
+.front-2 {
+    width: 300px;
+    height: 20px;
+    /* background-color: rgb(153, 38, 34); */
+    background: linear-gradient(357deg, rgba(245, 255, 0, 1) 0%, rgba(182, 43, 43, 1) 82%);
+    bottom: 250px;
+    left: 62.6%;
+    z-index: 100;
+}
+.capot-1 {
+    width: 300px; /* Задаємо ширину трапеції */
+    height: 0; /* Задаємо висоту як 0 */
+    border-bottom: 70px solid rgb(146, 27, 27); /* Нижня грань трапеції */
+    border-left: 0px solid transparent; /* Ліва грань трапеції */
+    border-right: 270px solid transparent; /* Права грань трапеції */
+    bottom: 270px;
+    left: 62.6%;
+}
+.capot-2 {
+    width: 32px;
+    height: 0;
+    border-bottom: 130px solid rgb(146, 27, 27);
+    border-left: 0px solid transparent;
+    border-right: 15px solid transparent;
+    bottom: 323px;
+    left: 61%;
+    transform: rotate(-24deg);
+}
+/* .capot-2 {
+    width: 80px; 
+    height: 0; 
+    border-bottom: 100px solid #3498db; 
+    border-left: 0px solid transparent; 
+    border-right: 30px solid transparent; 
+    bottom: 325px;
+    left: 61%;
+    transform: rotate(-24deg);
+} */
+.help-block {
+    /* width: 100px;
+    height: 0;
+    border-top: 50px solid #3fdb34;
+    border-bottom: 50px solid #3498db;
+    border-left: 50px solid #db3434;
+    border-right: 50px solid #bfdb34;
+    bottom: 0;
+    left: 0; */
+}
+.balka-1 {
+    width: 25px;
+    height: 280px;
+    /* background-color: rgb(153, 38, 34); */
+    background: linear-gradient(357deg, rgba(245, 255, 0, 1) 0%, rgba(182, 43, 43, 1) 82%);
+    transform: skew(10deg) rotate(0deg);
+    bottom: 155px;
+    left: 47%;
+    z-index: 98;
+}
+.balka-2 {
+    width: 420px;
+    height: 25px;
+    background-color: rgb(146, 27, 27);
+    /* background: linear-gradient(357deg, rgba(245, 255, 0, 1) 0%, rgba(182, 43, 43, 1) 82%); */
+    bottom: 423px;
+    left: 27.4%;
+}
+.balka-3 {
+    width: 25px;
+    height: 110px;
+    background: linear-gradient(357deg, rgba(245, 255, 0, 1) 0%, rgba(182, 43, 43, 1) 82%);
+    transform: skew(-22deg) rotate(0deg);
+    bottom: 327px;
+    left: 33.9%;
+    z-index: 98;
+}
+.balka-4 {
+    width: 255px;
+    border-bottom: 20px solid rgb(153, 38, 34);
+    /* background: linear-gradient(357deg, rgba(245, 255, 0, 1) 0%, rgba(182, 43, 43, 1) 82%); */
+    border-left: 10px solid transparent;
+    border-right: 0px solid transparent;
+    bottom: 250px;
+    left: 14.2%;
+    z-index: 100;
+}
+.corpus-1 {
+    width: 250px;
+    height: 55px;
+    background: linear-gradient(357deg, rgba(182, 152, 43, 1) 0%, rgba(33, 64, 2, 1) 100%);
+    bottom: 154px;
+    left: 13%;
+    z-index: 98;
+}
+.corpus-2 {
+    width: 270px;
+    height: 0;
+    border-bottom: 120px solid rgb(146, 27, 27);
+    border-left: 50px solid transparent;
+    border-right: 0px solid transparent;
+    bottom: 208px;
+    left: 13%;
+    z-index: 98;
+}
+.number {
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    color: rgb(204, 214, 11);
+    line-height: 1.46; /* 26.314px */
+    top: 0;
+    left: 60px;
+}
+.corpus-3 {
+    width: 100px;
+    height: 0;
+    border-bottom: 120px solid rgb(146, 27, 27);
+    border-left: 50px solid transparent;
+    border-right: 0px solid transparent;
+    transform: skew(-20deg);
+    border-top-left-radius: 90px;
+    bottom: 328px;
+    left: 18.555%;
+    z-index: 98;
+}
+.bamper-1 {
+    width: 35px;
+    height: 65px;
+    background: linear-gradient(71deg, rgba(121, 65, 0, 1) 0%, rgba(28, 28, 28, 1) 50%);
+    /* background-color: rgb(166, 140, 13); */
+    bottom: 140px;
+    left: 10.3%;
+    z-index: 98;
+}
+.back-wheel {
+    width: 30px;
+    height: 130px;
+    border-radius: 35%;
+    background: linear-gradient(56deg, rgba(64, 62, 60, 1) 53%, rgba(0, 0, 0, 1) 100%);
+    /* background-color: rgb(23, 22, 22); */
+    bottom: 202px;
+    left: 12.2%;
+    z-index: 98;
+    transform: rotate(21deg);
+}
+.wheel-holder-1 {
+    width: 30px;
+    height: 10px;
+    background-color: rgb(49, 34, 5);
+    bottom: 230px;
+    left: 13%;
+    z-index: 97;
+    transform: rotate(20deg);
+}
+.wheel-holder-2 {
+    width: 30px;
+    height: 10px;
+    background-color: rgb(49, 34, 5);
+    bottom: 270px;
+    left: 14%;
+    z-index: 97;
+    transform: rotate(20deg);
+}
+.light-1 {
+    width: 15px;
+    height: 35px;
+    background-color: rgb(255, 8, 0);
+    border-radius: 10px;
+    transform: skew(-22deg) rotate(0deg);
+    bottom: 257px;
+    left: 15%;
+    z-index: 105;
+}
+.light-2 {
+    width: 15px;
+    height: 35px;
+    background-color: rgb(183, 255, 0);
+    border-radius: 5px;
+    transform: skew(-22deg) rotate(0deg);
+    bottom: 217px;
+    left: 84.6%;
+    z-index: 105;
+}
+.light-3 {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 162, 0);
+    border-radius: 5px;
+    transform: skew(-22deg) rotate(0deg);
+    bottom: 197px;
+    left: 83.6%;
+    z-index: 105;
+}
+.light-4 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 162, 0);
+    border-radius: 10px;
+    transform: skew(-22deg) rotate(0deg);
+    bottom: 255px;
+    left: 71%;
+    z-index: 105;
+}
+.light-5 {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 162, 0);
+    border-radius: 5px;
+    transform: skew(-22deg) rotate(0deg);
+    bottom: 237px;
+    left: 14%;
+    z-index: 105;
+}
+.door-1 {
+    width: 400px;
+    height: 173px;
+    background: linear-gradient(357deg, rgba(182, 152, 43, 1) 0%, rgba(33, 64, 2, 1) 100%);
+    bottom: 154px;
+    left: 33%;
+    z-index: 96;
+    outline: 4px solid #363636;
+}
+.door-holder-1 {
+    width: 20px;
+    height: 15px;
+    background-color: rgb(89, 88, 99);
+    border-radius: 5px;
+    bottom: 274px;
+    left: 36%;
+    z-index: 100;
+}
+.hold-part-1 {
+    width: 10px;
+    height: 15px;
+    background-color: rgb(40, 40, 42);
+    border-radius: 5px;
+    bottom: 0px;
+    left: 0;
+    z-index: 100;
+}
+.door-holder-2 {
+    width: 20px;
+    height: 15px;
+    background-color: rgb(89, 88, 99);
+    border-radius: 5px;
+    bottom: 274px;
+    left: 51%;
+    z-index: 100;
+}
+.drive {
+    width: 20px;
+    height: 80px;
+    border-radius: 35%;
+    background-color: rgb(102, 67, 7);
+    bottom: 280px;
+    left: 59.5%;
+    z-index: 95;
+    transform: rotate(21deg);
+}
+.drive-holder {
+    width: 30px;
+    height: 15px;
+    border-radius: 35%;
+    background-color: rgb(37, 24, 3);
+    bottom: 315px;
+    left: 61%;
+    z-index: 94;
+    transform: rotate(21deg);
+}
+.glass-1 {
+    width: 525px;
+    height: 0;
+    border-bottom: 120px solid rgba(52, 152, 219, 0.5);
+    border-left: 0px solid transparent;
+    border-right: 60px solid transparent;
+    bottom: 304px;
+    left: 24%;
+    z-index: 95;
+}
+.glass-front {
+    width: 20px;
+    height: 0;
+    border-bottom: 100px solid rgba(52, 152, 219, 0.5);
+    border-left: 0px solid transparent;
+    border-right: 8px solid transparent;
+    bottom: 333px;
+    left: 61.8%;
+    transform: rotate(-26deg);
+    z-index: 100;
+}
+.seat-1 {
+    width: 30px;
+    height: 130px;
+    border-radius: 35%;
+    background-color: rgb(122, 81, 11);
+    bottom: 230px;
+    left: 35%;
+    z-index: 94;
+    transform: rotate(-15deg);
+}
+.seat-2 {
+    width: 30px;
+    height: 130px;
+    border-radius: 35%;
+    background-color: rgb(122, 81, 11);
+    bottom: 230px;
+    left: 49%;
+    z-index: 94;
+    transform: rotate(-15deg);
+}
+/* ==============АНІМАЦІЯ МАШИНКИ=============================================================================================== */
+/* 1 - ТРЕБА ЩОБ КРУТИЛИСЬ КОЛЕСА */
+.car__part--wheel {
+    animation-name: wheel-rotation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes wheel-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.car-background, .car-background-2 {
+    animation-name: paralax-move;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes paralax-move {
+    0% {
+        /* background: url(../img/paralax-5.png) 0% 50% repeat; */
+        background-position: 0% 50%;
+        /* transform: translateX(0%); */
+    }
+    100% {
+        background-position: 100% 50%;
+        /* transform: translateX(-100%); */
+    }
+}
+.car-prop {
+    animation-name: drive-in;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes drive-in {
+    0% {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        transform: scale(1);
+    }
+    50% {
+        margin-left: 120px;
+        margin-bottom: 90px;
+        transform: scale(0.9);
+    }
+    100% {
+        margin-left: -80px;
+        margin-bottom: -90px;
+        transform: scale(1.1);
+    }
+}
+.finish {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 20px; /* Змінюйте значення, якщо потрібно */
+    border-color: transparent transparent rgb(255, 34, 0) transparent; /* Змінюйте значення, якщо потрібно */
+    margin-bottom: 50px;
+    z-index: 110;
+}
+.finish-2 {
+    margin-bottom: 220px;
+    z-index: 90;
+}
+.finish::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 34, 0)
+} 
+.finish, .finish-2, .finish::before {
+    animation-name: finishing;
+    animation-delay: 6s;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    /* animation-direction: alternate; */
+}
+@keyframes finishing {
+    0% {
+        margin-right: 0;
+        opacity: 1;
+    }
+
+    100% {
+        margin-right: 1280px;
+        opacity: 1;
+    }
+}
+.dream {
+    width: 1280px;
+    height: 720px;
+    background-color: #000000;
+    opacity: 0;
+
+    animation-name: night-1;
+    animation-delay: 13s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    /* animation-direction: alternate; */
+    animation-fill-mode: forwards;
+}
+@keyframes night-1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.text {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.46; /* 26.314px */
+}
+.text-1 {
+    margin-left: 350px;
+    margin-top: 300px;
+    opacity: 0;
+
+    animation-name: text-1;
+    animation-delay: 16s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+.text-2 {
+    margin-left: 400px;
+    margin-top: 300px;
+    opacity: 0;
+
+    animation-name: text-1;
+    animation-delay: 19s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes text-1 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.text-3 {
+    margin-left: 400px;
+    margin-top: 300px;
+    opacity: 0;
+    overflow: hidden;
+    animation-name: night-1;
+    animation-delay: 24s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.wake-up-1 {
+    opacity: 0;
+
+    animation-name: night-1;
+    animation-delay: 21s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.amongla {
+    width: 1280px;
+    height: 720px;
+    background: url(../img/amongla-among-us.gif) 50% 50% no-repeat;
+    background-size: contain;
+    opacity: 0;
+
+    animation-name: night-1;
+    animation-delay: 23s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    /* animation-direction: alternate; */
+    animation-fill-mode: forwards;
+}
+/* ==============АНІМАЦІЯ МАШИНКИ ЗАКІНЧИЛАСЬ================================================================================================= */
+.experiments-container {
+    max-width: 1080px;
+    padding-bottom: 100px;
+}
+.experiments-container--margin {
+    margin: 0 auto;
+    padding-top: 70px;
+}
+.title-prop {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+}
+.title-prop--margin {
+    margin-bottom: 20px;
+}
+.properties {
+}
+.properties--margin {
+}
+.property {
+    display: inline-block;
+    width: 300px;
+    height: 329px;
+    background-color: rgb(164, 94, 70);
+}
+.property--margin {
+    margin-left: 80px;
+    margin-bottom: 80px;
+}
+/* Не забувай що можна отак */
+/* .property--margin:nth-child(1),
+.property--margin:nth-child(4),
+.property--margin:nth-child(7) {
+    margin-left: 0px;
+} */
+/* ООО ТАК взагалі годно */
+.property--margin:nth-child(3n + 1) {
+    margin-left: 0px;
+}
+.property__title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.corpus-3 {
+}
+/* ==============ПІШЛИ ВЛАСТИВОСТІ TRANSFORM================================================================================================= */
+.property__block {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 20%;
+    text-align: center;
+    visibility: visible;
+    opacity: 1;
+    background: url(../img/nicocado.jpg) 50% 50% no-repeat;
+    background-size: contain;
+    background-color: rgb(131, 156, 19);
+}
+/* ====================TRANSITION=============================== */
+.property__block--transition-duration {
+    transition-duration: 2s;
+}
+.property:hover .property__block--transition-duration {
+    transition-duration: 0.7s;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(156, 19, 19);
+}
+.property__block--transition-property {
+    transition-property: width, height, background-color;
+    transition-duration: 2s, 4s, 6s;
+}
+.property:hover .property__block--transition-property {
+    transition-duration: 1s, 2s, 3s;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(156, 19, 19);
+    border-radius: 50%;
+}
+.property__block--transition-delay {
+    transition-property: width, height, background-color;
+    transition-duration: 1s, 2s, 3s;
+}
+.property:hover .property__block--transition-delay {
+    transition-duration: 0.5s, 1s, 1.5s;
+    transition-delay: 1s;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(156, 19, 19);
+    border-radius: 50%;
+}
+.property__block--transition-timing-function {
+    transition-property: width, height, background-color;
+    transition-duration: 1s, 2s, 3s;
+    transition-timing-function: ease-in;
+}
+.property:hover .property__block--transition-timing-function {
+    transition-duration: 0.5s, 1s, 1.5s;
+    /* transition-delay: 1s; */
+    transition-timing-function: linear;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(156, 19, 19);
+    /* border-radius: 50%; */
+}
+.property__block--transition-1-row {
+    transition: width 1s ease-in, height 2s linear, background-color 3s ease-out;
+}
+.property:hover .property__block--transition-1-row {
+    transition-duration: 0.5s, 1s, 1.5s;
+    transition-timing-function: linear;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(40, 156, 19);
+}
+.property__block--transition-opacity-trick {
+    transition-duration: 1s;
+}
+.property:hover .property__block--transition-opacity-trick {
+    transition-duration: 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+/* ====================ANIMATION=============================== */
+@keyframes sus-animation {
+    0% {
+        width: 300px;
+        height: 300px;
+        border-radius: 20%;
+        background-color: rgb(131, 156, 19);
+        background: url(../img/nicocado.jpg) 50% 50% no-repeat;
+        background-size: contain;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(156, 19, 19);
+        background: url(../img/amongla-among-us.gif) 50% 50% no-repeat;
+        background-size: contain;
+        border-radius: 50%;
+    }
+}
+.property__block--animation-name {
+}
+.property:hover .property__block--animation-name {
+    animation-name: sus-animation;
+    animation-duration: 3s;
+}
+.property__block--animation-timing {
+}
+.property:hover .property__block--animation-timing {
+    animation-name: sus-animation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+.property__block--animation-iteration {
+    animation-name: sus-animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.property:hover .property__block--animation-iteration {
+}
+.property__block--animation-direction {
+    animation-name: sus-animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: reverse; */
+    animation-direction: alternate-reverse;
+}
+.property:hover .property__block--animation-direction {
+}
+.property__block--animation-paused {
+    animation-name: sus-animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.property:hover .property__block--animation-delay {
+    animation-play-state: paused;
+}
+.property__block--animation-delay {
+    animation-name: sus-animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 5s;
+}
+.property:hover .property__block--animation-delay {
+}
+.property__block--animation-fill-mode {
+    animation-name: sus-animation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    /* animation-direction: alternate-reverse; */
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.property:hover .property__block--animation-fill-mode {
+}
+.property__block--animation-1-row {
+    animation: sus-animation 1s linear infinite normal running 1s;
+}
+.property:hover .property__block--animation-1-row {
+}
+/* --------------- */
+.list {
+    background-color: #3fdb34;
+    width: 150px;
+    overflow: hidden;
+}
+.list__item {
+    transform: translate(-100%, 0px);
+    transition-duration: 0.2s;
+}
+
+.list__item:nth-child(1) {
+    transition-delay: 0s;
+}
+.list__item:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.list__item:nth-child(3) {
+    transition-delay: 0.4s;
+}
+.list__item:nth-child(4) {
+    transition-delay: 0.6s;
+}
+.list__item:nth-child(5) {
+    transition-delay: 0.8s;
+}
+
+.list:hover .list__item {
+    transition-duration: 0.5s;
+    transform: translate(0px, 0px);
+}
+
+.list__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+/* --------------- */
+.link {
+    color: green;
+    transition: color 0.3s;
+    overflow: hidden;
+    display: inline-block;
+}
+.link::after {
+    content: '';
+    width: 0;
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    margin-top: 2px;
+    background-color: green;
+    transition: all 0.3s;
+}
+
+.link:hover {
+    color: yellow;
+}
+.link:hover::after {
+    background-color: yellow;
+    width: 100%;
+    left: 0;
+}
+/* --------------- */
+/* ==============ВЛАСТИВОСТІ ANIMATION ЗАКІНЧИЛИСЬ================================================================================================= */

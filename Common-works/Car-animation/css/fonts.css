@@ -1,0 +1,56 @@
+/* Google fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Cormorant+Infant:wght@700&family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap');
+/* font-family: 'Cormorant Infant', serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* Підключення вручну */
+@font-face {
+    font-family: 'Causten';
+    src: url(../fonts/causten-regular.woff2) format('woff2'), url(../fonts/causten-regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Causten';
+    src: url(../fonts/causten-bold.woff2) format('woff2'), url(../fonts/causten-bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Causten';
+    src: url(../fonts/causten-semi-bold.woff2) format('woff2'), url(../fonts/causten-semi-bold.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Causten';
+    src: url(../fonts/causten-light.woff2) format('woff2'), url(../fonts/causten-light.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Semi bold 600 як в макеті знайти не вдалось. Сподіваюсь Анджела не помітить. Все одно це вона має мені шрифти надати. */
+@font-face {
+    font-family: 'CoreSansC';
+    src: url(../fonts/CoreSansC-65Bold.woff2) format('woff2'), url(../fonts/CoreSansC-65Bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CoreSansC';
+    src: url(../fonts/CoreSansC-75ExtraBoldIt.woff2) format('woff2'), url(../fonts/CoreSansC-75ExtraBold.woff) format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
