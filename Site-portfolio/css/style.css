@@ -1115,6 +1115,9 @@ mark {
      object-fit: cover;
   aspect-ratio: 0.8006535948;
 }
+.best-work__img-wrap a img:hover {
+  outline: 0.0625rem solid #111214;
+}
 
 .my-skills__container {
   text-align: center;

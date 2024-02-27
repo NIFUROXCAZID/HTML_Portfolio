@@ -128,7 +128,6 @@
     &:hover {
         background-color: $Main-Color-hover;
         border-radius: toRem(14);
-
     }
     &--works {
         @include adaptiveValue("margin-top", 60, 30);
@@ -252,6 +251,9 @@
                     $object-fit: cover,
                     $aspect-ratio: 735 / 918
                 );
+                &:hover {
+                    outline: toRem(1) solid $Black;
+                }
             }
         }
     }
