@@ -252,7 +252,7 @@
                     $aspect-ratio: 735 / 918
                 );
                 &:hover {
-                    outline: toRem(1) solid $Black;
+                    outline: toRem(5) solid $Black;
                 }
             }
         }
