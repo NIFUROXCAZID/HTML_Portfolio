@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* Цей коментар типу потрапить в css  */
+body {
+  background-color: #fff;
+}
+
+.button, .page__button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: 0;
+}
+
+.page__button {
+  font-size: 30px;
+}
+
+.page__button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: 0;
+}
+
+.page__button {
+  font-size: 30px;
+}
+
+.page__box {
+  width: 500px;
+  height: 500px;
+  background-color: green;
+  border: 1px solid red;
+}
+
+.about__box {
+  width: 100px;
+  height: 300px;
+  background-color: orange;
+  border: 1px solid purple;
+}
+
+.test {
+  width: 25%;
+  width: 25%; /* 300/1200 */
+}
+
+.text {
+  width: 100px -50px;
+}

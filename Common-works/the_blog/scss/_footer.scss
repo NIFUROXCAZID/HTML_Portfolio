@@ -1,0 +1,104 @@
+.footer {
+    background: $Main-Color-Green;
+    // .footer__container
+    &__container {
+        @extend %common-container;
+        @include adaptiveValue("margin-top", 120, 30);
+    }
+    // .footer__contact
+    &__contact {
+        color: $Text-White;
+        font-family: Roboto;
+        font-size: toRem(12);
+        font-weight: 400;
+        line-height: toRem(18);
+        letter-spacing: toRem(1.6);
+        text-transform: uppercase;
+        margin-bottom: toRem(24);
+    }
+    // .footer__title
+    &__title {
+        color: $Text-White;
+        font-family: Roboto;
+        font-size: toRem(31);
+        font-weight: 400;
+        line-height: toRem(38.4);
+        letter-spacing: 0%;
+        transition: 0.5s;
+        & span {
+            color: $Text-White-trans;
+            & :hover {
+                text-decoration: underline;
+                color: rgb(153, 209, 0);
+            }
+        }
+    }
+    // .footer__refs-zone
+    &__refs-zone {
+        @include adaptiveValue("margin-top", 110, 20);
+        @include adaptiveValue("margin-bottom", 110, 20);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // display: grid;
+        // grid-template-columns: repeat(auto-fit, minmax(toRem(212), 1fr));
+    }
+    // .footer__list
+    &__list {
+        &:not(:last-child) {
+            margin-bottom: toRem(15);
+        }
+        @media (max-width: toEm($huge-mobile-adaptive)) {
+            flex: 0 0 50%;
+        }
+        @media (max-width: toEm($small-mobile-adaptive)) {
+            flex: 0 0 100%;
+        }
+    }
+    // .footer__ref
+    &__ref {
+        color: $Text-White-trans;
+        font-family: Roboto;
+        font-size: toRem(16);
+        font-weight: 400;
+        line-height: toRem(24);
+        letter-spacing: 0%;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: toRem(-1);
+            left: 0;
+            width: 0%;
+            height: toRem(1);
+            background-color: rgb(153, 209, 0);
+            transition: width 0.3s ease;
+        }
+        &:hover {
+            color: $Text-White;
+            &::before {
+                width: 100%;
+            }
+            // text-decoration: underline;
+            // border-bottom: $Main-Color-text 1px solid;
+        }
+    }
+    // .footer__brands
+    &__brands {
+        display: block;
+        color: $Text-White;
+        font-family: Roboto;
+        font-size: toRem(16);
+        font-weight: 400;
+        line-height: toRem(24);
+        letter-spacing: 0%;
+
+        border-top: rgba(255, 255, 255, 0.16) solid toRem(1);
+        padding: toRem(20) 0 toRem(26) 0;
+        transition: 0.5s;
+        &:hover {
+            text-decoration: underline;
+            color: rgb(153, 209, 0);
+        }
+    }
+}

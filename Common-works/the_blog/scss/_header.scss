@@ -1,0 +1,49 @@
+.header {
+    @extend %header;
+    // .header__container
+    background: $Main-Color-White;
+    &__container {
+        @extend %common-container;
+        padding-top: toRem(20);
+        padding-bottom: toRem(20);
+    }
+    // .header__nav-bar
+    &__nav-bar {
+    }
+    // .header__nav-list
+    &__nav-list {
+        display: flex;
+        justify-content: center;
+        gap: toRem(40);
+    }
+    // .header__nav-button
+    &__nav-button {
+        color: $Main-Color-text;
+        font-family: Roboto;
+        font-size: toRem(14);
+        font-weight: 400;
+        line-height: toRem(21);
+        letter-spacing: 0%;
+
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: toRem(-1);
+            left: 0;
+            width: 0%;
+            height: toRem(1);
+            background-color: $Main-Color-text;
+            transition: width 0.3s ease;
+        }
+        &:hover {
+            color: $Main-Color-text;
+            &::before {
+                width: 100%;
+            }
+            // text-decoration: underline;
+            // border-bottom: $Main-Color 1px solid;
+        }
+    }
+}
