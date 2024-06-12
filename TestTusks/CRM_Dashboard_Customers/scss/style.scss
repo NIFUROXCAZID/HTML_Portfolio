@@ -1,0 +1,12 @@
+@use "sass:math";
+
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_icons.scss";
+@import "functions.scss";
+@import "library.scss";
+@import "_common.scss";
+
+@import "_index.scss";
+
+@include default-styles;

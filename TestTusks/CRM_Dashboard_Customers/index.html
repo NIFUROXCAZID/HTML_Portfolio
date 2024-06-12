@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRM Dahboard Customers</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="sidebar__container">
+                <div class="main__hello main__hello--sidebar">
+                    <button class="icon-menu"><span></span></button>
+                    <p class="hello hello--margin">Hello Evano 👋🏼,</p>
+                </div>
+                <div class="sidebar__logo">
+                    <img src="img/logo.svg" alt="logo">
+                    <h1>Dashboard</h1>
+                    <span>v.01</span>
+                </div>
+                <nav class="sidebar__nav nav">
+                    <a class="nav__element" href="#">
+                        <div class="nav__word">
+                            <span class="icon-key-square"></span>
+                            <p>Dashboard</p>
+                        </div>
+                    </a>
+                    <a class="nav__element" href="#">
+                        <div class="nav__word">
+                            <span class="icon-d-square"></span>
+                            <p>Product</p>
+                        </div>
+                        <span class="icon-chevron"></span>
+                    </a>
+                    <a class="nav__element nav-selected" href="#">
+                        <div class="nav__word">
+                            <span class="icon-user-square"></span>
+                            <p>Customers</p>
+                        </div>
+                        <span class="icon-chevron"></span>
+                    </a>
+                    <a class="nav__element" href="#">
+                        <div class="nav__word">
+                            <span class="icon-wallet-money"></span>
+                            <p>Income</p>
+                        </div>
+                        <span class="icon-chevron"></span>
+                    </a>
+                    <a class="nav__element" href="#">
+                        <div class="nav__word">
+                            <span class="icon-discount-shape"></span>
+                            <p>Promote</p>
+                        </div>
+                        <span class="icon-chevron"></span>
+                    </a>
+                    <a class="nav__element" href="#">
+                        <div class="nav__word">
+                            <span class="icon-message-question"></span>
+                            <p>Help</p>
+                        </div>
+                        <span class="icon-chevron"></span>
+                    </a>
+                </nav>
+                <div class="sidebar__profile profile">
+                    <a href="#"><img class="profile__image" src="img/profile_avatar.png" alt="avatar"></a>
+                    <div class="profile__text-zone">
+                        <a href="#" class="profile__name">Evano</a>
+                        <p class="profile__role">Project Manager</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="main">
+            <div class="main__container">
+                <div class="main__hello">
+                    <button class="icon-menu"><span></span></button>
+                    <p class="hello hello--margin">Hello Evano 👋🏼,</p>
+                </div>
+                <div class="all-customers">
+                    <div class="all-customers__head-part head-part">
+                        <div class="head-part__text-wrapper">
+                            <p class="head-part__customers">All Customers</p>
+                            <p class="head-part__active-members">Active Members</p>
+                        </div>
+                        <form class="search-form" action="/search" method="GET">
+                            <!-- <button type="submit" class="search-button"><img src="img/search.svg" alt="Q"></button> -->
+                            <input class="search-form__input" minlength="2" maxlength="70" tabindex="1" name="search-input" placeholder="&ensp;&ensp;&ensp;&ensp;Seacrh" type="text">
+                        </form>
+                    </div>
+                    <div class="all-customers__table table">
+                        <table class="table__block">
+                            <thead class="table__head">
+                                <tr class="table__row">
+                                    <th class="table__col-name">Customer Name</th>
+                                    <th class="table__col-name">Company</th>
+                                    <th class="table__col-name">Phone Number</th>
+                                    <th class="table__col-name">Email</th>
+                                    <th class="table__col-name">Country</th>
+                                    <th class="table__col-name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table__body">
+                                <!-- ========================= -->
+                                <tr class="table__row">
+                                    <td class="table__element">Jane Cooper</td>
+                                    <td class="table__element">Microsoft</td>
+                                    <td class="table__element">(225) 555-0118</td>
+                                    <td class="table__element">jane@microsoft.com</td>
+                                    <td class="table__element">United States</td>
+                                    <td class="table__element table__element--active">
+                                        <div>Active</div>
+                                    </td>
+                                </tr>
+                                <!-- ======================== -->
+                                <tr class="table__row">
+                                    <td class="table__element">Floyd Miles</td>
+                                    <td class="table__element">Yahoo</td>
+                                    <td class="table__element">(205) 555-0100</td>
+                                    <td class="table__element">floyd@yahoo.com</td>
+                                    <td class="table__element">Kiribati</td>
+                                    <td class="table__element table__element--inactive">
+                                        <div>Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__element">Ronald Richards</td>
+                                    <td class="table__element">Adobe</td>
+                                    <td class="table__element">(302) 555-0107</td>
+                                    <td class="table__element">ronald@adobe.com</td>
+                                    <td class="table__element">Israel</td>
+                                    <td class="table__element table__element--inactive">
+                                        <div>Inactive</div>
+                                    </td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__element">Marvin McKinney</td>
+                                    <td class="table__element">Tesla</td>
+                                    <td class="table__element">(252) 555-0126</td>
+                                    <td class="table__element">marvin@tesla.com</td>
+                                    <td class="table__element">Iran</td>
+                                    <td class="table__element table__element--active">
+                                        <div>Active</div>
+                                    </td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__element">Jerome Bell</td>
+                                    <td class="table__element">Google</td>
+                                    <td class="table__element">(629) 555-0129</td>
+                                    <td class="table__element">jerome@google.com</td>
+                                    <td class="table__element">Réunion</td>
+                                    <td class="table__element table__element--active">
+                                        <div>Active</div>
+                                    </td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__element">Kathryn Murphy</td>
+                                    <td class="table__element">Microsoft</td>
+                                    <td class="table__element">(406) 555-0120</td>
+                                    <td class="table__element">kathryn@microsoft.com</td>
+                                    <td class="table__element">Curaçao</td>
+                                    <td class="table__element table__element--active">
+                                        <div>Active</div>
+                                    </td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__element">Jacob Jones</td>
+                                    <td class="table__element">Yahoo</td>
+                                    <td class="table__element">(208) 555-0112</td>
+                                    <td class="table__element">jacob@yahoo.com</td>
+                                    <td class="table__element">Brazil</td>
+                                    <td class="table__element table__element--active">
+                                        <div>Active</div>
+                                    </td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__element">Kristin Watson</td>
+                                    <td class="table__element">Facebook</td>
+                                    <td class="table__element">(704) 555-0127</td>
+                                    <td class="table__element">kristin@facebook.com</td>
+                                    <td class="table__element">Åland Islands</td>
+                                    <td class="table__element table__element--inactive">
+                                        <div>Inactive</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="all-customers__footer-part footer-part">
+                        <p class="footer-part__showing-data">Showing data <span>1</span> to <span>8</span> of <span>256K</span> entries</p>
+                        <div class="footer-part__page-container">
+                            <a href="#" class="footer-part__page-chose">&lt;</a>
+                            <a href="#" class="footer-part__page footer-part__selected">1</a>
+                            <a href="#" class="footer-part__page">2</a>
+                            <a href="#" class="footer-part__page">3</a>
+                            <a href="#" class="footer-part__page">4</a>
+                            <a href="#" class="footer-part__dotes footer-part__dotes--dotstyles">...</a>
+                            <a href="#" class="footer-part__page">40</a>
+                            <a href="#" class="footer-part__page-chose">&gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
