@@ -53,6 +53,9 @@
             letter-spacing: -1%;
             padding-top: toRem(9);
         }
+        @media (max-width: toEm(900)) {
+            margin-bottom: toRem(20);
+        }
     }
     // .sidebar__nav
     &__nav {
@@ -158,6 +161,9 @@
         line-height: toRem(18);
         letter-spacing: 1%;
     }
+    @media (max-width: toEm(900)) {
+        margin-top: toRem(20);
+    }
 }
 .nav-selected {
     background-color: $bgPurple;
@@ -241,7 +247,7 @@
             align-items: center;
         }
         @media (max-width: toEm(900)) {
-            min-width: toRem(650);
+            min-width: toRem(630);
             overflow-x: scroll;
             white-space: nowrap;
         }
@@ -314,6 +320,10 @@
         font-weight: 400;
         line-height: toRem(21);
         letter-spacing: -1%;
+    }
+    @media (max-width: toEm(900)) {
+        justify-content: flex-start;
+        column-gap: toRem(30);
     }
 }
 .search-form {
@@ -502,5 +512,9 @@
         border: toRem(1) solid $bgPurple;
         background: $bgPurple;
         color: $bgWhite;
+    }
+        @media (max-width: toEm(900)) {
+        justify-content: flex-start;
+        column-gap: toRem(30);
     }
 }

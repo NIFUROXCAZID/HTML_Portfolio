@@ -200,6 +200,11 @@ mark {
   letter-spacing: -1%;
   padding-top: 0.5625rem;
 }
+@media (max-width: 56.25em) {
+  .sidebar__logo {
+    margin-bottom: 1.25rem;
+  }
+}
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,6 +319,11 @@ mark {
   line-height: 1.125rem;
   letter-spacing: 1%;
 }
+@media (max-width: 56.25em) {
+  .profile {
+    margin-top: 1.25rem;
+  }
+}
 
 .nav-selected {
   background-color: rgb(89, 50, 234);
@@ -416,7 +426,7 @@ mark {
 }
 @media (max-width: 56.25em) {
   .main__container {
-    min-width: 40.625rem;
+    min-width: 39.375rem;
     overflow-x: scroll;
     white-space: nowrap;
   }
@@ -517,6 +527,16 @@ mark {
   font-weight: 400;
   line-height: 1.3125rem;
   letter-spacing: -1%;
+}
+@media (max-width: 56.25em) {
+  .head-part {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-column-gap: 1.875rem;
+       -moz-column-gap: 1.875rem;
+            column-gap: 1.875rem;
+  }
 }
 
 .search-form__input {
@@ -702,6 +722,16 @@ mark {
   border: 0.0625rem solid rgb(89, 50, 234);
   background: rgb(89, 50, 234);
   color: rgb(255, 255, 255);
+}
+@media (max-width: 56.25em) {
+  .footer-part {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-column-gap: 1.875rem;
+       -moz-column-gap: 1.875rem;
+            column-gap: 1.875rem;
+  }
 }
 
 body {
