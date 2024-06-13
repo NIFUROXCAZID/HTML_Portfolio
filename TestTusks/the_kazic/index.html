@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>the_kazic</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo logo">
+                    <img class="logo__image" src="img/logo.svg" alt="Logo">
+                </div>
+                <nav class="header__nav-bar">
+                    <ul class="header__nav-list">
+                        <div class="header__logo header__logo--res logo">
+                            <img class="logo__image" src="img/logo.svg" alt="Logo">
+                        </div>
+                        <li><a class="header__nav-item" href="#">Application</a></li>
+                        <li><a class="header__nav-item" href="#">Reviev</a></li>
+                        <li class="bonus"><a class="header__nav-item" href="#">Bonus <img src="./img/chevron.svg" alt=">"></a>
+                            <ul class="sub-menu-1">
+                                <li class="sub-menu-1__item">
+                                    <a href="#" class="sub-menu-1__link">Bonus Code</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu-1__link--res"><a href="#" class="sub-menu-1__link sub-menu-1__link--res">Bonus Code</a></li>
+                        <li class="header__btn--res"><a class="header__btn header__btn--login header__btn--res" href="#">Login</a></li>
+                        <li class="header__btn--res"><a class="header__btn header__btn--register header__btn--res" href="#">Registration</a></li>
+                        <li class="header-menu"><button><img src="img/header_res_btn.svg" alt="="></button></li>
+                    </ul>
+                </nav>
+                <button class="header-menu"><img src="img/header_res_btn.svg" alt="="></button>
+                <div class="header__reg-wrapper">
+                    <a class="header__btn header__btn--login" href="#">Login</a>
+                    <a class="header__btn header__btn--register" href="#">Registration</a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <section class="oficcial-greeting">
+                    <div class="oficcial-greeting__container">
+                        <h1 class="oficcial-greeting__title">Banzaibet Casino: A Fresh Perspective on Online Gaming</h1>
+                        <p class="oficcial-greeting__text">Welcome to Banzaibet Casino, the latest entrant in the online gaming world, where innovation meets tradition in a dynamic blend. As a brand new platform, Banzaibet Casino is not just another addition to the digital gambling landscape; it's a unique paradigm shift designed to redefine what gamers expect from online casinos. Our introduction to Banzai bet is not just about presenting its features; it's about immersing you in an experience that's unparalleled in today's market.</p>
+                        <p class="oficcial-greeting__text">From the onset, Banzai.bet Casino differentiates itself with a sleek, user-friendly interface that promises ease of navigation and an engaging user experience. It's not just about the games – which are, of course, top-notch and sourced from the finest developers – it's also about creating a holistic environment where players feel valued and entertained. Each aspect of Banzaibet online&nbsp;has been meticulously crafted with the player in mind, from the intuitive design to the carefully curated game selection, ensuring a gaming experience that is both enjoyable and memorable.</p>
+                        <p class="oficcial-greeting__text">Banzai bet understands&nbsp;that trust and transparency are the cornerstones of any successful online gaming platform. That's why we've committed to upholding the highest standards of fairness and security, ensuring that your gaming journey is not just thrilling, but also safe and secure. Our commitment to innovation is not limited to entertainment alone; it extends to providing robust security measures and responsible gaming practices, ensuring a balanced and responsible approach to online gambling.</p>
+                        <div class="oficcial-greeting__baner-wrapper">
+                            <strong class="oficcial-greeting__wellcoming">Greetings from Banzai</strong>
+                            <button class="oficcial-greeting__button">Play</button>
+                        </div>
+                    </div>
+                </section>
+                <div id="go-top-elem" class="go-top">
+                    <button onclick="scrollToStart()" class="go-top__button">
+                        <img src="img/go-top.svg" alt="|^|">
+                    </button>
+                </div>
+                <section id="target-element" class="content">
+                    <div class="content__container">
+                        <h2 class="content__title">Зміст</h2>
+                        <button class="content__button content__button--show">Показати</button>
+                        <button class="content__button content__button--hide">Приховати</button>
+                        <div class="content__wrapper">
+                            <button onclick="scrollToElement(content_1)" class="content__ref">📄 Licensing and Operational Assurance</button>
+                            <button onclick="scrollToElement(content_2)" class="content__ref">⚜️ Features at Banzaibet Online</button>
+                            <button onclick="scrollToElement(content_3)" class="content__ref">👌 Selecting Banzaibet Casino Games</button>
+                            <button onclick="scrollToElement(content_4)" class="content__ref">🔧 Banzaibet's Elite Gaming Providers</button>
+                            <button onclick="scrollToElement(content_5)" class="content__ref">👍 Promo at Banzaibet Casino</button>
+                            <button onclick="scrollToElement(content_6)" class="content__ref">💲 Banzaibet Casino's Attractive Deposit Bonuses</button>
+                            <button onclick="scrollToElement(content_7)" class="content__ref">💸 Exciting Tournaments at Banzaibet Casino</button>
+                            <button onclick="scrollToElement(content_8)" class="content__ref">✔️ Conclusion</button>
+                            <button onclick="scrollToElement(content_9)" class="content__ref">❔ FAQs</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="content_1" class="info-section">
+                    <div class="info-section__container">
+                        <h2 class="info-section__title">Banzaibet Casino's Licensing and Operational Assurance</h2>
+                        <p class="info-section__text">Banzai.bet Casino is proudly powered by Evolut Interactive N.V., adhering to the high standards of the Curacao gaming license (No 8048/JAZ2022-084). This license is a testament to our commitment to ethical gaming practices and stringent regulatory standards. Our operations are further bolstered by the reliable payment support provided by Nevadin LTD, a company known for its secure and efficient financial transaction services. Registered under the number HE 433770, Nevadin LTD operates from its legal address at Agias Zonis &amp; Thessalonikis, NICOLAOU PENTADROMOS CENTER, Floor 10, Flat/Office 1001A, BLOCK B, 3026, Limassol, Cyprus, ensuring a robust and trustworthy backbone for all payment processes at Banzaibet. Our dedication to upholding these high standards of licensing and operation reflects our commitment to providing a safe, secure, and fair gaming environment for all our players.</p>
+                    </div>
+                </section>
+                <section id="content_2" class="info-section">
+                    <div class="info-section__container">
+                        <h2 class="info-section__title">Features at Banzaibet Online</h2>
+                        <p class="info-section__text info-section__text--margin">Delving deeper into the heart of Banzaibet online, we uncover the features that set the Banzaibet casino apart, marking it as a destination for both seasoned gamers and newcomers alike. Banzaibet's commitment to excellence is evident in every facet of its operation, from the diversity of games to the user-centric approach to service.</p>
+                        <h3 class="info-section__sub-title">Advanced Security Measures</h3>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Diverse Range: At Banzaibet, variety is more than just a buzzword. The casino boasts an extensive collection of games, encompassing classic slots, progressive jackpots, table games, and live dealer experiences.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Top-notch Providers: Partnering with leading game developers, Banzaibet ensures a gaming catalogue that is not only vast but also features high-quality, immersive gameplay.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">Advanced Security Measures</h3>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Ease of Navigation: Banzaibet's platform is designed for simplicity and elegance, allowing players to easily find their preferred games and access essential features without any hassle.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Mobile Compatibility: Understanding the need for on-the-go gaming, Banzaibet online offers a fully optimized mobile experience, ensuring seamless gameplay on various devices.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">Robust Customer Support</h3>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">24/7 Assistance: Banzaibet prides itself on its professional customer support team, available around the clock to assist with any inquiries or issues.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Multiple Contact Channels: Players can reach out via live chat, email, or phone, ensuring that help is always just a few clicks or a call away.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">Rewarding Bonuses and Promotions</h3>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Welcoming Bonuses: New players at Banzaibet are greeted with attractive welcome bonuses, setting the tone for a rewarding gaming journey.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Ongoing Promotions: Regular players are not left out, as the casino offers an array of promotions, including free spins, reload bonuses, and loyalty rewards.</p>
+                            </li>
+                        </ul>
+                        <p class="info-section__text">Banzaibet online is not just about playing games; it's about experiencing them in an environment that's designed for enjoyment, fairness, and security. Each feature is a testament to Banzaibet's dedication to creating an unparalleled online casino experience. Stay with us as we continue to explore the unique world of Banzaibet, where every play is a step into a realm of excitement and quality entertainment.</p>
+                    </div>
+                </section>
+                <section id="content_3" class="info-section">
+                    <div class="info-section__container">
+                        <h2 class="info-section__title">Selecting Banzaibet Casino Games</h2>
+                        <p class="info-section__text info-section__text--margin">At Banzaibet, the pulsating core of our casino experience is undoubtedly the diverse and thrilling range of games available. Catering to every taste and preference, our game selection is a meticulously curated collection featuring everything from classic favourites to the latest innovations in online gaming. Let's take a closer look at the variety that Banzaibet offers.</p>
+                        <h3 class="info-section__sub-title">Slots</h3>
+                        <p class="info-section__text info-section__text--margin">Enter the world of Banzaibet Slots, where each spin is a note in an enthralling symphony of excitement. Whether you're looking for a quick escape or a long adventure, our slots library has something to captivate your imagination and potentially fill your pockets.</p>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Break Da Bank: Dive into the thrill of this classic, where each spin could be your key to a vault of wins.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Magic Garden 10: Uncover mystical rewards as you navigate enchanting flora and fauna.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Burning Wins: Classic 5 Lines: Experience the nostalgia of traditional fruit slots with a modern twist.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">The Princess &amp; Dwarfs: Rockways: Join a fairy-tale adventure filled with surprises and rich rewards.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">Fast Games</h3>
+                        <p class="info-section__text info-section__text--margin">Fast Games at Banzaibet are the epitome of rapid excitement.Ideal for a quick gaming session, these games provide a burst of fun and an opportunity for swift wins, making every second count.</p>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Mines: Test your luck and intuition by uncovering hidden treasures.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Limbo: Experience the adrenaline rush in this high-speed, simple, captivating game.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Magnify Man: Unleash your inner superhero and win big.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">JetX3: Blast off into a futuristic journey of risk and reward.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">Roulette</h3>
+                        <p class="info-section__text info-section__text--margin">Roulette at Banzai bet is a timeless classic, reinvented. Each spin of the wheel is a dance with fate, as players anticipate where the ball will land. The elegant simplicity of roulette, combined with the suspense of the spinning wheel, makes it a perennial favorite. Whether you're placing a straight bet or a complex pattern, roulette promises a sophisticated and exhilarating gaming experience.</p>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">European Roulette High Stakes: For those who love the classic European layout with higher stakes.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">American Roulette: Embrace the challenge of the double-zero wheel.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">American Roulette High Stakes: Amp up the excitement with higher stakes in the American format.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Neon City Wheel: Spin into a neon-lit future with this visually stunning take on roulette.</p>
+                            </li>
+                        </ul>
+                        <p class="info-section__text info-section__text--margin">The Table Games section at Banzai bet is where minds are challenged and fortunes are made. These games provide a more cerebral experience, where each decision can turn the tide of the game. It's not just about the cards you're dealt but how you play them, making every session a thrilling encounter of wits.</p>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Dragon Tiger: Immerse yourself in this simple yet captivating game of prediction.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Jacks or Better: A video poker favourite, perfect for those looking to use strategy to increase their odds.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Craps: Experience the dice-rolling excitement of this casino classic.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Satta Matka Express: A fast-paced, number-based game that's sure to thrill.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">Card Games</h3>
+                        <p class="info-section__text info-section__text--margin">Card Games at Banzaibet are a testament to the timeless allure of playing cards. Each shuffle brings new possibilities and each hand is a story in itself.</p>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Bonus Deuces Wild: A twist on classic poker with special payouts for hands containing deuces.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">10-Hand Video Poker: Engage in an exciting variant of video poker that allows you to play ten hands simultaneously. This multi-hand version increases the action and potential winnings, providing an exhilarating poker experience.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Texas Hold 'em Poker 3D: Immerse yourself in a realistic poker experience.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">Jackpots</h3>
+                        <p class="info-section__text info-section__text--margin">Jackpots at Banzaibet are the dreams of fortune-seekers. Each jackpot game is a portal to a world where a single spin can change your life. With each bet, the anticipation builds, and with each spin, you're a step closer to potentially life-changing jackpots.</p>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Cosmic Cash: Win big in a galaxy far, far away.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Emperor Panda: Venture into the bamboo forests in search of giant rewards.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Scarab Boost: Uncover ancient treasures in this Egyptian-themed jackpot adventure.</p>
+                            </li>
+                        </ul>
+                        <p class="info-section__text">At Banzai bet, each game is more than just a chance to win; it's an opportunity to immerse oneself in a world of excitement, strategy, and fun. Our games are designed to cater to all players, whether you're a seasoned gambler or a casual player looking for a quick escape into online gaming. With this diverse selection, Banzaibet is a beacon in the online casino world, offering an unparalleled gaming experience.</p>
+                    </div>
+                </section>
+                <section id="content_4" class="info-section">
+                    <div class="info-section__container">
+                        <h2 class="info-section__title">Banzaibet's Elite Gaming Providers</h2>
+                        <p class="info-section__text info-section__text--margin">Banzaibet’s gaming excellence is powered by a selection of the industry's most renowned providers. Each brings unique strengths to our gaming portfolio, ensuring a diverse and high-quality experience for players. Here's a closer look:</p>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">1X2: Known for pioneering virtual sports and classic casino games. A perfect blend of traditional and innovative gameplay elements.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Betsoft: Renowned for cinematic 3D slots and engaging narratives. Games that combine stunning visuals with rich storylines for an immersive experience.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Pragmatic Play: Versatility in offering high-quality slots and live casino games. Exceptional graphics and mobile-optimized gaming experiences.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">PGsoft: Innovators in mobile gaming with a focus on visually stunning and engaging titles. Advanced graphics, immersive soundscapes, and unique gameplay mechanics.</p>
+                            </li>
+                        </ul>
+                        <p class="info-section__text">In addition to these key providers, Banzaibet boasts a range of other esteemed game developers, each adding their unique touch to our expansive and varied gaming library. This collective effort ensures that Banzaibet remains at the forefront of online gaming, offering something special for every type of player.</p>
+                    </div>
+                </section>
+                <section id="content_5" class="info-section">
+                    <div class="info-section__container">
+                        <h2 class="info-section__title">Promo at Banzaibet Casino</h2>
+                        <p class="info-section__text info-section__text--margin">At Banzai bet Casino, we believe in enriching the player experience with a variety of enticing bonuses. Each bonus is designed to not only boost your gameplay but also to celebrate your milestones and loyalty. Let's delve deeper into these offerings.</p>
+                        <h3 class="info-section__sub-title">Fortune Calling Lottery</h3>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Concept: A unique lottery that gives players the chance to win Apple devices and Free Spins (FS).</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Engagement:&nbsp;By participating in this lottery, players get a thrilling opportunity to win state-of-the-art technology along with additional chances to play and win on their favorite slots. It's a perfect blend of high-tech rewards and gaming pleasure.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">Welcome Bonus</h3>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Introduction:&nbsp;As a warm welcome to new players, Banzaibet offers 30 FREE SPINS.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Advantage:&nbsp;This bonus is ideal for new users, providing a risk-free way to explore the vast array of games available at Banzaibet. It's a sign of our commitment to giving every player a memorable and enjoyable start.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">Happy Birthday Bonus</h3>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Personalization:&nbsp;Celebrate your birthday with Banzai bet and receive personalized bonuses.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Appreciation:&nbsp;This bonus is a token of Banzaibet’s appreciation for its players. It adds a personal touch to your gaming experience, making your special day even more memorable with tailored rewards that match your gaming style.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">Your Cash Back</h3>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Loyalty Rewards:&nbsp;Engage more, climb higher in the Loyalty Program, and earn increased cashback.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Progressive Benefits:&nbsp;This feature is designed to reward our regular players. The more you play, the higher your loyalty level, and the greater your cashback rewards. It's our way of saying thank you for your continued patronage and enthusiasm.</p>
+                            </li>
+                        </ul>
+                        <p class="info-section__text">These diverse bonuses at Banzaibet Casino are more than just promotional tools; they are a reflection of our dedication to creating an enjoyable and player-centric gaming environment. From welcoming new faces with free spins to celebrating birthdays and rewarding loyalty, each bonus is a piece of our commitment to your gaming satisfaction. At Banzaibet, we ensure that every spin, every win, and every milestone is not just rewarding but also a memorable experience.</p>
+                    </div>
+                </section>
+                <section id="content_6" class="info-section">
+                    <div class="info-section__container">
+                        <h2 class="info-section__title">Banzaibet Casino's Attractive Deposit Bonuses</h2>
+                        <p class="info-section__text info-section__text--margin">Banzaibet Casino extends its generosity beyond promotional bonuses, offering a range of enticing deposit bonuses that cater to all players. Whether you're making your first deposit or you're a returning player, these bonuses provide extra value to your gaming experience. Here's a detailed look at the deposit bonuses on offer:</p>
+                        <h3 class="info-section__sub-title">1st Deposit Bonus: Kick-Start Your Gaming Journey</h3>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Bonus: 100% match bonus plus 200 Free Spins.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Minimum Deposit: For depositing over 125,000 UZS.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">How to Claim: Simply make your first deposit to claim this bonus and begin your adventure at Banzaibet with a boosted bankroll and plenty of spins.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">2nd Deposit Bonus: Keep the Momentum Going</h3>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Bonus: 50% match bonus plus 50 Free Spins.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Minimum Deposit: For depositing over 60,000 UZS.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">How to Claim: Continue your Banzai bet journey with your second deposit and enjoy additional bonus funds and spins to keep the fun going.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">3rd Deposit Bonus: The Rewards Continue</h3>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Bonus: 100% match bonus plus 50 Free Spins.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Minimum Deposit: For depositing over 90,000 UZS.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">How to Claim: Banzaibet ensures the excitement doesn't wane by doubling your deposit and adding more free spins to your account as you make your third deposit.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">4th Deposit Bonus: Consistent Player Rewards</h3>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Bonus: 100% match bonus plus 100 Free Spins.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Minimum Deposit: For depositing over 90,000 UZS.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">How to Claim: Your fourth deposit at Banzaibet is met with another fantastic 100% bonus, extending your playtime and chances to win.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">5th Deposit Bonus: The Big Bonus Boost</h3>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Bonus: 150% match bonus plus 100 Free Spins.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Minimum Deposit: For depositing over 120,000 UZS.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">How to Claim: This substantial bonus rewards your continued loyalty. Deposit over 120,000 UZS and enjoy a hefty 150% bonus plus 100 free spins.</p>
+                            </li>
+                        </ul>
+                        <p class="info-section__text">Banzaibet Casino's deposit bonuses are structured to benefit players at every stage of their gaming journey. These bonuses are a testament to Banzaibet's commitment to not only attracting but also retaining and rewarding its players with generous bonuses and free spins, enhancing the overall casino experience.</p>
+                    </div>
+                </section>
+                <section id="content_7" class="info-section">
+                    <div class="info-section__container">
+                        <h2 class="info-section__title">Exciting Tournaments at Banzaibet Casino</h2>
+                        <p class="info-section__text info-section__text--margin">Banzaibet Casino elevates the gaming experience with various captivating tournaments, each offering unique challenges and substantial rewards. These tournaments are designed to cater to various player preferences, ensuring thrilling competition and the opportunity for big wins. Let's delve into the details of these engaging tournaments:</p>
+                        <h3 class="info-section__sub-title">Playson Short Races</h3>
+                        <p class="info-section__text info-section__text--margin">Experience the rush with Playson Short Races, where each 20-minute session is an adrenaline-fueled dash to the top. Competitors relish the challenge of rapid gameplay, vying for a part of the massive 1,400,000,000 UZS prize pool. This tournament stands out for its intensity and the exhilarating chance to win big quickly.</p>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Participation: Open to registered and logged-in users at Banzai.bet. Qualify by making spins in participating games with bets over EUR 0.2.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Scoring: Earn 10 points for every EUR 1 won. The more points, the higher your position on the leaderboard.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Final Prizes: A grand prize pool of EUR 700,000 distributed monthly among top players according to the tournament rules.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">Big Bass Galaxy Smash</h3>
+                        <p class="info-section__text info-section__text--margin">Big Bass Galaxy Smash takes you on an interstellar gambling adventure with the excitement of space-themed gameplay. The tournament features a colossal prize pool of 1,350,000,000 UZS. Its unique charm lies in the random distribution of prizes, giving every spin the potential to yield cosmic rewards.</p>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Mechanics: Place bets in participating games during the tournament. Any spin can trigger a random prize from the EUR 1,000,000 prize pool.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Random Prizes: Prizes are distributed randomly, ensuring equal winning chances for all participants.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Prize Crediting: Automatic to players' accounts upon activation.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">Drops &amp; Wins Slots</h3>
+                        <p class="info-section__text info-section__text--margin">Drops &amp; Wins Slots is an epic year-long tournament that keeps players engaged with their favourite slots. The massive 26,029,000,000 UZS prize pool is a testament to its grandeur. The tournament's diverse mechanics, including Regular and Prize Multiplier Weeks, ensure a fresh and exciting gaming experience throughout the year.</p>
+                        <h3 class="info-section__sub-title">Format:</h3>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">48 Weekly Tournaments: Lasting 7 days each with different mechanics (Regular Weeks or Prize Multiplier Weeks).</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">336 Daily Prize Drops: Randomly generated prizes awarded daily.</p>
+                            </li>
+                        </ul>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Challenges: Multiple in-game challenges with points awarded for wins, consecutive no-win rounds, and big wins.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Eligibility: Open to registered users with specific account currencies. Participate by making spins in the participating games.</p>
+                            </li>
+                        </ul>
+                        <h3 class="info-section__sub-title">Drop &amp; Wins Live</h3>
+                        <p class="info-section__text info-section__text--margin">Drop &amp; Wins Live offers the unmatched thrill of live tournament play. This immersive experience combines Daily Prize Drops and Weekly Blackjack Tournaments with the excitement of Daily Game Shows. Players can enjoy real-time competition and diverse formats, all while aiming for a share of the significant prize pool.</p>
+                        <p class="info-section__text info-section__text--margin">Prize Pool: 6,495,000,000 UZS</p>
+                        <h3 class="info-section__sub-title">Components:</h3>
+                        <ul class="info-section__list">
+                            <li>
+                                <p class="info-section__listed-text">Daily Prize Drops: Seven daily prize draws with a total prize pool of €/£252,000.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Weekly Blackjack Tournament: Consecutive winning streaks earn points, contributing to the leaderboard.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Daily Game Shows Tournament: Points are awarded based on the winning multiplier in participating games.</p>
+                            </li>
+                            <li>
+                                <p class="info-section__listed-text">Total Prizes: EUR 6,000,000, with a monthly prize pool of EUR 500,000.</p>
+                            </li>
+                        </ul>
+                        <p class="info-section__text">These tournaments are not just about winning big; they are about the thrill of competition, the joy of participation, and the excitement of achieving top leaderboard positions. Each tournament is meticulously designed to offer a unique gaming experience, ensuring that players are engaged, entertained, and have fair chances of winning amazing prizes. With such a diverse range of tournaments, Banzai.bet is a premier destination for online gaming enthusiasts.</p>
+                    </div>
+                </section>
+                <section id="content_8" class="info-section">
+                    <div class="info-section__container">
+                        <h2 class="info-section__title">Conclusion</h2>
+                        <p class="info-section__text info-section__text--margin">As we draw the curtains on our comprehensive exploration of Banzai bet, it's clear that this platform stands out as a beacon in the online gaming world. From the vast array of meticulously curated games provided by industry-leading developers to the thrilling, diverse tournaments offering substantial prizes, Banzai.bet Casino creates an immersive and dynamic gaming environment.</p>
+                        <p class="info-section__text info-section__text--margin">The array of bonuses, including both eye-catching promotional and generous deposit bonuses, illustrates Banzaibet's commitment to enhancing player experience at every turn. These bonuses are thoughtfully designed to cater to both new and returning players, ensuring that every deposit unlocks new potential for enjoyment and success.</p>
+                        <p class="info-section__text">In summary, Banzai bet&nbsp;is not just a gaming platform; it's a comprehensive, secure, and exhilarating online casino experience. It stands as a testament to what a modern online casino can offer - a blend of entertainment, security, and player-focused services. Whether you're a seasoned gamer or new to the world of online casinos, this casino offers an experience that is worth exploring.</p>
+                    </div>
+                </section>
+                <section id="content_9" class="questions">
+                    <div class="questions__container">
+                        <h2 class="info-section__title">FAQs</h2>
+                        <div class="questions__item" id="question">
+                            <button data-spoller class="questions__button">
+                                <p class="questions__title">What is the casino, and how does it differentiate itself from other online casinos?</p>
+                                <img class="questions__img" src="img/chevron.svg" alt="+">
+                            </button>
+                            <div class="questions__body">
+                                <ul class="questions__list">
+                                    <li class="questions__item-li">
+                                        <p class="default-text default-text--questions">This casino is a new online gaming platform that blends innovation with tradition to offer a unique gaming experience. It distinguishes itself with a sleek, user-friendly interface, a wide variety of games from top developers, robust security measures, and a commitment to fair and responsible gaming. The platform is licensed under Curacao gaming license and offers an environment that prioritizes player value and engagement.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="questions__item" id="question">
+                            <button data-spoller class="questions__button">
+                                <p class="questions__title">What types of games can I find at the casino?</p>
+                                <img class="questions__img" src="img/chevron.svg" alt="+">
+                            </button>
+                            <div class="questions__body">
+                                <ul class="questions__list">
+                                    <li class="questions__item-li">
+                                        <p class="default-text default-text--questions">Banzaibet Casino offers an extensive collection of games including classic slots, progressive jackpots, table games, live dealer experiences, and fast games like Mines and Limbo. The casino partners with leading game developers to ensure a high-quality, immersive gaming experience.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="questions__item" id="question">
+                            <button data-spoller class="questions__button">
+                                <p class="questions__title">How does the casino ensure the security and fairness of its games?</p>
+                                <img class="questions__img" src="img/chevron.svg" alt="+">
+                            </button>
+                            <div class="questions__body">
+                                <ul class="questions__list">
+                                    <li class="questions__item-li">
+                                        <p class="default-text default-text--questions">The casino employs cutting-edge encryption technology to protect player information and ensures fair play through regular independent audits. This guarantees that game outcomes are random and unbiased, providing a secure and fair gaming environment.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="questions__item" id="question">
+                            <button data-spoller class="questions__button">
+                                <p class="questions__title">What kind of customer support does the casino offer?</p>
+                                <img class="questions__img" src="img/chevron.svg" alt="+">
+                            </button>
+                            <div class="questions__body">
+                                <ul class="questions__list">
+                                    <li class="questions__item-li">
+                                        <p class="default-text default-text--questions">The casino offers professional customer support available 24/7. Players can reach out for assistance via multiple channels including live chat, email, or phone, ensuring readily available help.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="questions__item" id="question">
+                            <button data-spoller class="questions__button">
+                                <p class="questions__title">Are there any bonuses or promotions?</p>
+                                <img class="questions__img" src="img/chevron.svg" alt="+">
+                            </button>
+                            <div class="questions__body">
+                                <ul class="questions__list">
+                                    <li class="questions__item-li">
+                                        <p class="default-text default-text--questions">Yes, Banzaibet Casino offers various bonuses and promotions, including a welcoming bonus for new players, ongoing promotions like free spins, reload bonuses, and loyalty rewards, as well as exciting tournaments with substantial prize pools. There are also attractive deposit bonuses for first-time and returning players, enhancing the overall gaming experience.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__logos">
+                <a href="#" class="footer__logo-wrapper">
+                    <img src="./img/footer-logos/logo-f1.png" alt="Image">
+                </a>
+                <a href="#" class="footer__logo-wrapper">
+                    <img src="./img/footer-logos/logo-f2.png" alt="Image">
+                </a>
+                <a href="#" class="footer__logo-wrapper">
+                    <img src="./img/footer-logos/logo-f3.png" alt="Image">
+                </a>
+                <a href="#" class="footer__logo-wrapper">
+                    <img src="./img/footer-logos/logo-f4.svg" alt="Image">
+                </a>
+                <a href="#" class="footer__logo-wrapper">
+                    <img src="./img/footer-logos/logo-f5.svg" alt="Image">
+                </a>
+                <a href="#" class="footer__logo-wrapper">
+                    <img src="./img/footer-logos/logo-f6.png" alt="Image">
+                </a>
+                <a href="#" class="footer__logo-wrapper">
+                    <img src="./img/footer-logos/logo-f7.png" alt="Image">
+                </a>
+                <a href="#" class="footer__logo-wrapper">
+                    <img src="./img/footer-logos/logo-f8.png" alt="Image">
+                </a>
+                <a href="#" class="footer__logo-wrapper">
+                    <img src="./img/footer-logos/logo-f9.png" alt="Image">
+                </a>
+                <a href="#" class="footer__logo-wrapper">
+                    <img src="./img/footer-logos/logo-f10.png" alt="Image">
+                </a>
+                <a href="#" class="footer__logo-wrapper">
+                    <img src="./img/footer-logos/logo-f11.svg" alt="Image">
+                </a>
+                <a href="#" class="footer__logo-wrapper">
+                    <img src="./img/footer-logos/logo-f12.png" alt="Image">
+                </a>
+            </div>
+            <div class="footer__container">
+                <ul class="footer__links">
+                    <li><a class="footer__link" href="#">Напищіть нам</a></li>
+                    <li><a class="footer__link" href="#">Честна гра</a></li>
+                    <li><a class="footer__link" href="#">Політика конфеденційності</a></li>
+                    <li><a class="footer__link" href="#">Правила ставок</a></li>
+                    <li><a class="footer__link" href="#">Статут</a></li>
+                    <li><a class="footer__link" href="#">Партнери</a></li>
+                    <li><a class="footer__link" href="#">Питання</a></li>
+                </ul>
+                <p class="footer__copyright">Copyright © 2024 Banzai</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
